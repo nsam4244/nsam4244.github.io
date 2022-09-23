@@ -129,7 +129,7 @@
                 state.stop = state.duck = state.jump = state.flyingJump = doNothing;
             state.enter = function() {
                 console.log(`entering ${ name }`);
-                asset.body.bounce.y = 0;
+                asset.body.bounce.y = -1;
                 game.add.tween(asset.body).to( { y: asset.body.y -100 }, 1000, Phaser.Easing.Linear.None, true);
 
                 asset.body.velocity.x = 200 * _direction;
@@ -221,7 +221,7 @@
                 console.log(`total frames: ${flyingJump.frameTotal}`);
                 console.log(`origYOffset : ${origYOffset}`);
             
-            asset.body.offset.x += 10 * _direction;
+            asset.body.offset.x += 40 * _direction;
             asset.body.offset.y -= 30;
             asset.body.y -= 22;
             let onUpdate = function (anim, frame) {
