@@ -1,0 +1,19 @@
+User Story / Gameplay
+Describe the gameplay
+There are two boards on the screen to the left and to the right which move up and down. You control one of these while your friend controls the others. You have a box in the center which moves up,down,left and right. You have to block the box from passing you, if it passes the other board gets a point.
+What are the conditions when the game begins?
+If the box moves past your board, the other team scores a point
+Does the game have an end? If so, what are the conditions for when it ends?
+First to 15 points wins
+What ifs will there be?
+Visual Game Components:
+What are the visual game components? For example, in Bouncing Box, the game components were the board and the box.
+The boards will be static pictures of chips which are flipped for each side and the box will be an animimated gif of cheesedip
+What data will you need to manage each game component? For example, in Bouncing Box, the data values were positionX, speedX, and points.
+The same values for bouncing box however for the board I will be using the just the y values and there will be named chip1Y and chip2Y and for the box it will have boxX boxY and speed to make the game not boring
+Events / Logic
+What events will occur in this game? (timer events, keyboard events, clicking events?)
+As time moves on with each score, the box slowly gets faster, and with each point the box gets a tiny bit faster
+How do those events affect the data of the program?
+I will have to implent lots of timers and speed into the code
+For each "event", write out the high-level logic of what will happen. It is better (and tricky) to be as specific as you can while remaining high-level!
